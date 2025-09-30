@@ -1,0 +1,95 @@
+
+body {
+    /* 2. Mude a cor de fundo */
+    background-color: #f0f2f5; /* Um cinza claro suave */
+    
+    /* 2. Centralize o conteúdo do cartão na página */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;       /* Garante que o body ocupe toda a altura da viewport */
+    margin: 0;               /* Remove margem padrão do body */
+    font-family: Arial, sans-serif; /* Define uma fonte base */
+}
+
+/* 3. Estilização do elemento Cartão (.cartao) */
+.cartao {
+    /* 3. Defina uma largura razoável */
+    width: 320px;
+    /* A altura pode ser automática (auto) para se ajustar ao conteúdo */
+    /* height: 450px; * Não recomendado se o conteúdo variar */
+
+    background-color: #ffffff; /* Fundo branco para o cartão */
+    
+    /* 3. Aplique uma borda suave (usando box-shadow) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    /* 3. Defina um preenchimento interno (padding) */
+    padding: 30px; 
+    
+    /* 3. Centralize o texto dentro do cartão */
+    text-align: center;
+    
+    /* 3. Arredonde os cantos */
+    border-radius: 12px;
+}
+
+/* Estilo para a imagem */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    margin-bottom: 15px;
+    border: 3px solid #007bff; /* Uma pequena borda colorida para destaque */
+}
+
+/* 4. Estilo para o título (Nome) */
+h1 {
+    color: #333333; /* Cor mais escura para o nome */
+    font-size: 2em; /* Tamanho da fonte maior */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* 4. Estilo para o parágrafo (Profissão/Interesse) */
+.profissao {
+    color: #6c757d; /* Um cinza médio */
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Estilo para o subtítulo */
+h3 {
+    color: #007bff; /* Cor primária */
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: inline-block; /* Ajusta a largura da borda ao conteúdo */
+}
+
+/* 4. Estilo para a lista (Habilidades/Interesses) */
+ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* Estilo para os itens da lista */
+li {
+    background-color: #e9ecef; /* Cor de fundo suave para cada item */
+    color: #495057;
+    padding: 8px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover (opcional, para um toque extra) */
+li:hover {
+    background-color: #dee2e6;
+}
